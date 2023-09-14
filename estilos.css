@@ -1,0 +1,570 @@
+/*import fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600&display=swap');
+
+/* colores negro #0a0908
+axul #22333B 
+beige #EAE0D5
+beige + #C6AC8F
+marron #5E503F
+white #F3F7F0*/
+
+*{
+    font-family: "Oswald";
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #F3F7F0;
+}
+/* home section */
+.home{
+    display: block;
+    background-size: contain;
+    background-position: center center;
+    background-image: url(/assets/logos/logo2.png);
+    background-color: #181717;
+    margin-top: -20px;
+    animation: backgroundSlide 20s linear infinite;
+    padding: 55px;
+    opacity: 0.90;
+}
+.home .home-content{
+    width: 100%;
+}
+
+/* lateral menu */
+.home .home-content header{
+    margin-top: 60px;
+    position: fixed;
+}
+.home .home-content header .nav{
+    position: fixed;
+    margin-left: 50px;
+    background-color: #181717;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: left;
+    z-index: 5;
+    display: none;
+    box-shadow: 0px 4px 10px #5E503F;
+}
+.home .home-content header .nav a{
+    display: block;
+    color: #F3F7F0;
+    padding: 2px;
+    text-decoration: none;
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+.home .home-content header .nav-bar{
+    position: fixed;
+    color: #F3F7F0;
+    left: 0%;
+    background-color: #181717;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    line-height: 37px;
+    cursor: pointer;
+    transition: .5s;
+    z-index: 1;
+    text-align:center;
+    box-shadow: 0px 0px 7px #F3F7F0;
+    border: 1px solid #F3F7F0;
+}
+.home .home-content header .nav-bar:hover{
+    background-color: #C6AC8F;
+    box-shadow: 0 0 20px #5E503F;
+}
+
+/* bar container */
+.home .bar-container{
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    left: 0px;
+    top: 80px;
+    width: 100%;
+    background-image: url(./assets/1-stephen-johnson-Q8_-Cc-IXRY-unsplash\ \(1\).jpg);
+    background-size: cover;
+    z-index: -1;
+    box-shadow: 0px 0px 7px #EAE0D5;
+}
+.home .networks {
+    padding: 10px;
+}
+.home .networks a{
+    text-align:center;
+    display: inline-block;
+    text-decoration: none;
+    background-color: #181717;
+    color: #F3F7F0;
+    border: 1px solid #F3F7F0;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 37px;
+    margin: 0 5px;
+    transition: .5s;
+    box-shadow: 0px 0px 7px #F3F7F0;
+}
+.home .networks a:hover{
+    background-color: #C6AC8F;
+    box-shadow: 0 0 20px #5E503F;
+}
+.home .info h1{
+    font-size: 1.5rem;
+    padding: 10px;
+    font-family: "Oswald";
+    text-shadow: 0 0 55px #8C5E58;
+    font-weight: 400;
+    text-shadow: 0px 0px 7px #181717;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #F3F7F0;
+}
+
+/* welcome words */
+.home-animation {
+    font-family: "Oswald";
+	font-weight: 400;
+	text-align: center;
+    justify-content: center;
+}
+.animated-words {
+	position: relative;
+    color: #5E503F;
+    /* text-transform: uppercase; */
+    font-size: 1.6rem;
+    letter-spacing: 1.2px;
+    text-shadow: 0 0 40px #5E503F;
+    line-height: 2;
+    margin-top: 50px;
+}
+.animated-words .animated {
+	opacity: 0;
+	position: absolute;
+	width: 100%;
+	text-align: center;
+    animation: animateme ease-in-out 2;
+}
+.animated-words .item1 {
+	animation-name: animateme;
+	animation-duration: 10s;
+	animation-delay: -7s;
+}
+.animated-words .item2 {
+	animation-name: animateme;
+	animation-duration: 10s;
+	animation-delay: -4.8s;
+}
+.animated-words .item3 {
+	animation-name: animateme;
+	animation-duration: 10s;
+	animation-delay: -2.6s;
+}
+.animated-words .item4 {
+	animation-name: animateme;
+	animation-duration: 10s;
+	animation-delay: 0s;
+}
+
+/* ABOUT US SECTION */
+.title-section{
+    position: relative;
+    font-family: "Oswald";
+    font-weight: 300;
+    font-size: 1.5rem;
+    color: #EAE0D5;
+    margin-left: 10px;
+    margin-top: 10px;
+    text-align: start;
+}
+.aboutus{
+    position: relative;
+    padding: 20px;
+    margin: 4%;
+    box-shadow: 0px 4px 10px #5E503F;
+    border-radius: 8px;
+    margin-top: 100px;
+    text-align: center;
+    justify-content: center;
+    z-index: -1;
+}
+.aboutus::before {
+    content: "";
+    background-image: url(./assets/1-stephen-johnson-Q8_-Cc-IXRY-unsplash\ \(1\).jpg);
+    background-size: 100%;
+    filter: blur(6px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+}
+.aboutus .content-section{
+    max-width: 90%;
+    margin: auto;
+    padding: 5px 5px 5px 5px;
+}
+.aboutus .content-section h3{
+    margin-top: 20px;
+    text-shadow: 0 0 30px #C6AC8F;
+    text-transform: uppercase;
+    font-size: 27px;
+}
+.aboutus .content-section .special, .lounges-gallery .special{
+    color: #EAE0D5;
+    font-weight: 400;
+    margin-top: 20px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.aboutus .content-section p, .lounges-gallery p{
+    max-width: 700px;
+    margin: auto;
+    color: #EAE0D5;
+    text-shadow: 0px 0px 30px #181717;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+/* team gallery */
+.aboutus .content-section .team-card {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+    position: relative;
+    overflow: hidden;
+    top: 20px;    
+}
+.aboutus .content-section .team-card .team-card-img {
+    display: block;
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 500ms;
+    border-radius: 8px;
+}
+.team-card-img:hover {
+    transform: rotate(5deg) scale(1.25);
+}
+/* made with love section*/
+.aboutus .content-section .row{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+.aboutus .content-section .row .col{
+    width: 30%;
+    margin-top: 20px;
+}
+.aboutus .content-section .row .col i{
+    color: #EAE0D5;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #EAE0D5;
+    line-height: 40px;
+    border-radius: 50%;
+}
+.aboutus .content-section .row .col span{
+    display: block;
+    font-weight: bold;
+    margin: 8px 0;
+}
+
+/* lounges gallery */
+.lounges-gallery {
+  display: flex;
+  box-sizing: border-box;
+  padding: 10px;
+  /* background: #181717; */
+  background-image: linear-gradient(to right, #181717, #C6AC8F);  
+}
+figcaption { 
+  margin: 0; 
+  font-weight: 300;
+  text-transform: uppercase;
+}
+div#captioned-gallery { 
+  width: 100%; 
+  overflow: hidden; 
+}
+figure.slider { 
+  position: relative; 
+  width: 500%;
+  font-size: 0; 
+  animation: 35s slidy infinite;
+}
+figure.slider figure { 
+  width: 20%; 
+  height: auto;
+  display: inline-block;  
+  position: inherit; 
+}
+figure.slider img { 
+  width: 100%; 
+  height: 400px; 
+  object-fit: cover;
+  border-radius: 8px; 
+}
+figure.slider figure figcaption { 
+  position: absolute; 
+  bottom: 0;
+  background: rgba(0,0,0,0.4);
+  color: #F3F7F0; 
+  width: 100%;
+  font-size: 2rem; 
+  padding: .6rem;  
+}
+  
+/* SKILSS SECTION */
+.services {
+    padding: 50px 0 100px 0;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./assets/f21.webp");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top center;
+    color: #EAE0D5;
+}
+.services .content-section{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+}
+.services .content-section h3{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.services .content-section .row{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.services .content-section .row .col{
+    width: 47%;
+    text-align: left;
+} 
+
+
+/*  gallery SECTION */
+.gallery{
+    background-color: #E7AD99;
+    padding: 140px 0 100px 0;
+    text-align: center;
+}
+.gallery .content-section{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+}
+.gallery .content-section h3{
+    text-transform: uppercase;
+    font-size: 25px;
+}
+.gallery .content-section .info{
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.gallery .content-section .info .col{
+    width: 40%;
+}
+.gallery .content-section .info .col .title{
+    display: block;
+    color: #495867;
+    font-weight: bold;
+    border: 2px solid #495867;
+    padding: 10px;
+    text-align: center;
+}
+.gallery .content-section .info .col table{
+    margin-top: 30px;
+    border-collapse: collapse;
+}
+.gallery .content-section .info .col table .data{
+    width: 40%;
+    border-bottom: 1px solid #495867;
+}
+.gallery .content-section .info .col table h4{
+    margin-top: 10px;
+}
+.gallery .content-section .info .col table h3{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.gallery .content-section .info .col table p{
+    font-size: 14px;
+}
+.gallery .content-section .info .col table .description{
+    border-left: 1px solid #495867;
+    padding: 20px;
+}
+/* contact section */
+.contact-information{
+    background-color: #495867;
+    padding: 140px 0 100px 0;
+    color: #ECC8AF;
+    text-align: center;
+}
+.contact-information .content-section{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+}
+.contact-information .content-section h3{
+    text-transform: uppercase;
+    font-size: 25px;
+}
+.contact-information .content-section .row{
+    display: flex;
+    justify-content: space-around;
+}
+.contact-information .content-section .row .col{
+    margin-top: 50px;
+}
+.contact-information .content-section .row .col h2{
+    color: #CE796B;
+}
+/* RESPONSIVE SECTION */
+@media screen and (max-width:1300px){
+    .aboutus .content-section .team-card {
+        display: grid;
+        grid-template-columns: repeat(3, 2fr);
+        grid-gap: 10px;
+    }
+}
+@media screen and (max-width:975px){
+    .aboutus .content-section .team-card {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        grid-gap: 10px;
+        margin-left: 30px;
+    }
+}
+@media screen and (max-width:800px){
+    .services .content-section .row{
+        display: block;
+    }
+    .services .content-section .row .col {
+        width: 100%;
+        text-align: center;
+    }
+    .services .content-section .row .col .bar-content{
+        justify-content: center;
+    }
+    .aboutus .content-section .row {
+        display: block;
+    }
+    .aboutus .content-section .row .col {
+        width: 100%;
+        margin: auto;
+        margin-top: 20px;
+    } 
+    .gallery .content-section .info .col{
+        width: 100%;
+        margin: auto;
+    }
+    .gallery .content-section .info .col .title{
+        width: 100%;
+        text-align: center;
+    }
+    .gallery .content-section .info .col table{
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    .contact-information .content-section .row{
+        display: block;
+    }
+}
+@media screen and (max-width:704px){
+    .aboutus .content-section .team-card .team-card-img {
+        width: 200px;
+        height: 250px;
+    }
+}
+@media screen and (max-width:578px){
+    .home .home-content header .nav-bar {
+        left: -30px;
+    }
+    .aboutus .content-section .team-card .team-card-img {
+        width: 150px;
+        height: 200px;
+    }
+}
+@media screen and (max-width:468px){
+    .aboutus .content-section .team-card {
+        display: grid;
+        grid-template-columns: repeat(1, 4fr);
+        grid-gap: 5px;
+        justify-items: center;
+        margin-left: 0;
+    }
+}
+
+/* animation header */
+@keyframes backgroundSlide {
+    from {
+        background-position: 0 0; 
+    }
+    to {
+        background-position: -100% 0; 
+    }
+}
+
+/* welcome words animations */
+@keyframes animateme {
+	0%   {top: 140px; opacity: 0;}
+	5%  {top: 105px; opacity: 0.10;}
+	22%  {top: 105px; opacity: 0.10;}
+	27%  {top: 70px; opacity: 0.3;}
+	44%  {top: 70px; opacity: 0.3;}
+	49%  {top: 35px; opacity: 0.45;}
+	66%  {top: 35px; opacity: 0.75;}
+	71%  {top: 0; opacity: 1;}
+	88%  {top: 0; opacity: 1;}
+  89%  {top: 0; opacity: 0;}
+}
+/* lounges gallery animations */
+@keyframes slidy {
+    0% { left: 0%; }
+    20% { left: 0%; }
+    25% { left: -100%; }
+    45% { left: -100%; }
+    50% { left: -200%; }
+    70% { left: -200%; }
+    75% { left: -300%; }
+    95% { left: -300%; }
+    100% { left: -400%; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
