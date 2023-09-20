@@ -9,16 +9,16 @@ marron #5E503F
 white #F3F7F0*/
 
 *{
-    font-family: "Oswald";
+    font-family: "Oswald"; 
     margin: 0;
     padding: 0;
 }
 html{
     scroll-behavior: smooth;
     background-color: #EAE0D5;
+    width: 100%;
 }
 body{
-  margin: 0;
   overflow-x:hidden;
 }
 
@@ -31,9 +31,9 @@ body{
     background-color: #181717;
     width: 100%;
     height: 80px;
-    margin-top: -15px;
-    animation: backgroundSlide 20s linear infinite;
-    padding: 5px;
+    margin-top: -25px;
+    animation: backgroundSlide 30s linear infinite;
+    padding: 10px;
     opacity: 0.90;
 }
 
@@ -64,7 +64,7 @@ body{
 }
 .home .home-content header .nav-bar{
     position: fixed;
-    margin-top: 30px;
+    margin-top: 40px;
     color: #F3F7F0;
     background-color: #181717;
     font-size: 20px;
@@ -93,7 +93,8 @@ body{
     left: 0px;
     top: 70px;
     width: 100%;
-    background-image: url(./assets/1-stephen-johnson-Q8_-Cc-IXRY-unsplash\ \(1\).jpg);
+    background-image: url(./assets/f31.jpg);
+    background-position: center center;
     background-size: cover;
     z-index: -1;
     box-shadow: 0px 0px 7px #EAE0D5;
@@ -383,66 +384,10 @@ figure.slider figure.lounge-img figcaption {
     margin: 8px 0;
 }
 
-
-/*  gallery SECTION */
-/* .prod-gallery{
-    background-color: #E7AD99;
-    padding: 140px 0 100px 0;
-    text-align: center;
-}
-.prod-gallery .content-section{
-    max-width: 1000px;
-    margin: auto;
-    padding: 0 10px;
-}
-.prod-gallery .content-section h3{
-    text-transform: uppercase;
-    font-size: 25px;
-}
-.prod-gallery .content-section .info{
-    text-align: left;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 30px;
-}
-.prod-gallery .content-section .info .col{
-    width: 40%;
-}
-.prod-gallery .content-section .info .col .title{
-    display: block;
-    color: #495867;
-    font-weight: bold;
-    border: 2px solid #495867;
-    padding: 10px;
-    text-align: center;
-}
-.prod-gallery .content-section .info .col table{
-    margin-top: 30px;
-    border-collapse: collapse;
-}
-.prod-gallery .content-section .info .col table .data{
-    width: 40%;
-    border-bottom: 1px solid #495867;
-}
-.prod-gallery .content-section .info .col table h4{
-    margin-top: 10px;
-}
-.prod-gallery .content-section .info .col table h3{
-    font-size: 20px;
-    margin-bottom: 5px;
-}
-.prod-gallery .content-section .info .col table p{
-    font-size: 14px;
-}
-.prod-gallery .content-section .info .col table .description{
-    border-left: 1px solid #495867;
-    padding: 20px;
-} */
-
 /* FOOTER */
 .footer{
   background:#181717;
-  padding:30px 0px;
+  padding:20px 0px;
   text-align:center;
   }
   
@@ -453,26 +398,20 @@ figure.slider figure.lounge-img figcaption {
   color:gray;
   font-size:0.8em;
   }
-  
   .footer .row a{
   text-decoration:none;
   color:gray;
   transition:0.5s;
   }
-  
   .footer .row a:hover{
   color:#fff;
   }
-  
   .footer .row ul{
   width:100%;
   }
-  
   .footer .row ul li{
   display:inline-block;
-  margin:0px 30px;
   }
-  
   .footer .row a i{
   font-size:2em;
   margin:0% 1%;
@@ -494,6 +433,12 @@ figure.slider figure.lounge-img figcaption {
   }
   
 /* RESPONSIVE SECTION */
+
+/* @media (max-width: 900px){
+    body{
+        margin-right: -7px;
+    }
+} */
 
 @media screen and (max-width:800px){
     .aboutus .content-section .row {
