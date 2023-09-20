@@ -24,21 +24,8 @@ for(let i = 0; i < links.length; i++){
 
 // aos
 
-// lounges carousel 
-$(document).ready(function () {
-    // Selecciona todas las imágenes del carrusel
-        var carouselImages = $(".carousel__thumbnails label img");
 
-    // Asigna un evento de clic a cada imagen del carrusel
-        carouselImages.click(function () {
-        // Obtiene el ID del botón de radio correspondiente
-            var radioID = $(this).parent("label").attr("for");
-
-        // Activa el botón de radio correspondiente
-            $("#" + radioID).prop("checked", true);
-        });
-    });
-
+// footer
 
 
 
