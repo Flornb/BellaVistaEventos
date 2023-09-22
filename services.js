@@ -18,6 +18,8 @@ lightBoxContent.appendChild(lightBoxNext);
 document.body.appendChild(lightBoxContainer);
 
 let index = 1;
+// var for save the position of the scroll click 
+let clickedIndex = 0; 
 
 function showLightBox(n) {
     if (n > galleryItem.length) {
@@ -31,9 +33,9 @@ function showLightBox(n) {
 
 function currentImage() {
     lightBoxContainer.style.display = "block";
-
-    let imageIndex = parseInt(this.getAttribute("data-index"));
-    showLightBox(index = imageIndex);
+    // keeps the value of the click scroll position
+    clickedIndex = parseInt(this.getAttribute("data-index"));
+    showLightBox(index = clickedIndex);
 }
 for (let i = 0; i < galleryItem.length; i++) {
     galleryItem[i].addEventListener("click", currentImage);
@@ -57,3 +59,11 @@ function closeLightBox() {
     }
 }
 lightBoxContainer.addEventListener("click", closeLightBox);
+
+// opens gallery in the click scroll position
+function openGalleryAtIndex() {
+    lightBoxContainer.style.display = "block";
+    showLightBox(index = clickedIndex);
+}
+// click event wich opens gallery in the click scroll position
+lightBoxImg.addEventListener("click", openGalleryAtIndex);

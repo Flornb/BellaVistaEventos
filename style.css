@@ -33,7 +33,7 @@ body{
     animation: backgroundSlide 30s linear infinite;
     padding-top: 10px;
     padding-bottom: 10px;
-    opacity: 0.90;
+    /* opacity: 0.95; */
 }
 
 /* lateral menu */
@@ -49,7 +49,7 @@ body{
     padding: 15px;
     border-radius: 10px;
     text-align: left;
-    z-index: 5;
+    /* z-index: 9999; */
     display: none;
     box-shadow: 0px 4px 10px #5E503F;
 }
@@ -76,6 +76,7 @@ body{
     text-align:center;
     box-shadow: 0px 0px 7px #F3F7F0;
     border: 1px solid #F3F7F0;
+    /* z-index: 9999; */
 }
 .home .home-content header .nav-bar:hover{
     background-color: #C6AC8F;
@@ -91,14 +92,16 @@ body{
     left: 0px;
     top: 70px;
     width: 100%;
-    background-image: url(./assets/f31.jpg);
+    background-image: url(./assets/background/f31.webp);
     background-position: center center;
     background-size: cover;
-    z-index: -1;
-    box-shadow: 0px 0px 7px #EAE0D5;
+    /* z-index: -1; */
+    box-shadow: 0 0 20px #5E503F;
 }
+/* box-shadow: 0px 0px 7px #EAE0D5; */
 .home .networks {
     padding: 10px;
+    cursor: pointer;
 }
 .home .networks a{
     text-align:center;
@@ -114,6 +117,7 @@ body{
     margin: 0 5px;
     transition: .5s;
     box-shadow: 0px 0px 7px #F3F7F0;
+    
 }
 .home .networks a:hover{
     background-color: #C6AC8F;
@@ -191,6 +195,7 @@ body{
     border-radius: 8px;
     border-bottom-right-radius: 0;
     border-top-right-radius: 0;
+    box-shadow: 0px 4px 10px #5E503F;
 }
 .lounges-gallery .special {
     width: 25%;
@@ -260,15 +265,15 @@ figure.slider figure.lounge-img figcaption {
 }
 .aboutus::before {
   content: "";
-  background-image: url(./assets/1-stephen-johnson-Q8_-Cc-IXRY-unsplash\ \(1\).jpg);
+  background-image: url(./assets/background/1-stephen-johnson-Q8_-Cc-IXRY-unsplash\ \(1\).webp);
   background-size: cover;
-  filter: brightness(40%);
+  filter: brightness(20%);
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1; 
+  /* z-index: -1;  */
 }
 .aboutus .content-section{
   max-width: 95%;
@@ -312,8 +317,9 @@ figure.slider figure.lounge-img figcaption {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
+    filter: brightness(120%);
 	border-radius: 15px;
-	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+	box-shadow: 0px 3px 7px #C6AC8F;
 	margin: 10px;
 	height: 280px;
 	transition: transform 0.2s ease-in-out;
@@ -337,7 +343,7 @@ figure.slider figure.lounge-img figcaption {
 	background-image: url('./assets/family-pics/beer\ 1.webp');
 }
 .card:nth-of-type(4) {
-	background-image: url('./assets/family-pics/foodtruck.jpeg');
+	background-image: url('./assets/family-pics/foodtruck.webp');
 }
 .card:nth-of-type(5) {
 	background-image: url('./assets/family-pics/12\ \(1\).webp');
@@ -382,54 +388,6 @@ figure.slider figure.lounge-img figcaption {
     font-weight: bold;
     margin: 8px 0;
 }
-
-/* FOOTER */
-.footer{
-  background:#181717;
-  padding:20px 0px;
-  text-align:center;
-  }
-  
-  .footer .row{
-  width:100%;
-  margin:1% 0%;
-  padding:0.6% 0%;
-  color:gray;
-  font-size:0.8em;
-  }
-  .footer .row a{
-  text-decoration:none;
-  color:gray;
-  transition:0.5s;
-  }
-  .footer .row a:hover{
-  color:#fff;
-  }
-  .footer .row ul{
-  width:100%;
-  }
-  .footer .row ul li{
-  display:inline-block;
-  }
-  .footer .row a i{
-  font-size:2em;
-  margin:0% 1%;
-  }
-  
-  @media (max-width:720px){
-  .footer{
-  text-align:left;
-  padding:5%;
-  }
-  .footer .row ul li{
-  display:block;
-  margin:10px 0px;
-  text-align:left;
-  }
-  .footer .row a i{
-  margin:0% 3%;
-  }
-  }
   
 /* RESPONSIVE SECTION */
 

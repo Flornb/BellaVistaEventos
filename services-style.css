@@ -7,103 +7,105 @@ body {
     width: 100%;
     text-align: center;
 }
+.services-section{
+  max-height: fit-content;
+}
 .title-section {
-    font-family: 'Oswald';
-    color: #181717;
-    font-size: 30px;
-    font-weight: 500;
-    border-bottom: 1px solid #181717;
+  font-family: 'Oswald';
+  color: #181717;
+  font-size: 30px;
+  font-weight: 500;
+  border-bottom: 1px solid #181717;
 }
 .special {  
-    font-family: 'Oswald';
-    font-size: 20px;
+  font-family: 'Oswald';
+  font-size: 20px;
 }
 .gallery-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    background-image: linear-gradient(to right, #181717, #5E503F);
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
-    width: 80%;
-    margin: 0 auto;
-    padding: 10px;
-    border-radius: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-image: linear-gradient(to right, #181717, #5E503F);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  width: 60%;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 8px;
 }
 .gallery-item {
-    flex-basis: 32.7%;
-    margin-bottom: 6px;
-    opacity: .80;
-    cursor: pointer;
+  flex-basis: 32.7%;
+  margin-bottom: 6px;
+  opacity: .80;
+  cursor: pointer;
+  /* max-width: 250px; */
 }
 .gallery-item:hover {
-    opacity: 1;
+  opacity: 1;
 }
 .gallery-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    max-height: 150px;
-    border-radius: 8px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  max-height: 150px;
+  border-radius: 8px;
 }
 .gallery-content {
-    font-size: .8em;
+  font-size: .8em;
 }
 .lightbox {
-    position: fixed;
-    display: none;
-    background-color: rgba(0, 0, 0, 0.8);
-    width: 100%;
-    height: 100%;              
-    overflow: auto;
-    top: 0;
-    left: 0;
+  position: fixed;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;              
+  overflow: auto;
+  top: 0;
+  left: 0;
 }
 .lightbox-content {
-    position: relative;
-    width: 70%;
-    height: 70%;
-    margin: 5% auto;
+  position: relative;
+  width: 70%;
+  height: 70%;
+  margin: 5% auto;
 }
 .lightbox-content img {
-    border-radius: 7px;
-    box-shadow: 0 0 3px 0 rgba(225, 225, 225, .25);
-    /* width: 100%;
-    height: 100%; */
-    object-fit: cover;
-    max-width: 600px;
-    max-height: 600px;
+  border-radius: 7px;
+  box-shadow: 0 0 3px 0 rgba(225, 225, 225, .25);
+  object-fit: cover;
+  max-width: 500px;
+  max-height: 500px;
 }
 .lightbox-prev,
 .lightbox-next {
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: #181717;
-    padding: 7px;
-    top: 45%;
-    cursor: pointer;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #181717;
+  padding: 7px;
+  top: 45%;
+  cursor: pointer;
 }
 .lightbox-prev {
-    left: 0;
+  left: 0;
 }
 .lightbox-next {
-    right: 0;
+  right: 0;
 }
 .lightbox-prev:hover,
 .lightbox-next:hover {
-    opacity: .8;
+  opacity: .8;
 }
 /* scroll arrow */
 .ico {
-  margin: 10% auto;
+  margin: 5% auto;
   text-align: center;
   width: 80px;
   height: 80px;
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+    transform: translateY(-50%);
   -webkit-filter: url("#goo");
-          filter: url("#goo");
+    filter: url("#goo");
 }
 .ico .circle {
   background: #C6AC8F;
