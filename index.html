@@ -5,6 +5,10 @@
     <!-- responsive -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- web description -->
+    <meta name="description" content="Bella Vista, planificamos tu evento, que tu única preocupación sea disfrutarlo!">
+    <!-- cache handler-->
+    <meta http-equiv="Cache-Control" content="max-age=3600, must-revalidate">
     <!-- icons  fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- aos -->
@@ -26,37 +30,43 @@
     <!--HOME SECTION-->
     <section class="home" id="home"  onClick="showHideMenu()" >
         <div class="home-content">
-            <header data-aos="fade-down" data-aos-duration="3000">
-                <div class="nav-bar">
-                    <i class="fa-solid fa-bars"></i>
+            <div class="bar-container">
+                <nav class="navbar">
+                    <span class="open-slide">
+                        <a href="#" id="svg">
+                            <svg width="30" height="30">
+                                <path d="M0,5 30,5"     stroke="#fff"   stroke-width="5" />
+                                <path d="M0,14 30,14"   stroke="#fff"     stroke-width="5" />
+                                <path d="M0,23 30,23"   stroke="#fff"     stroke-width="5" />
+                            </svg>
+                        </a>
+                    </span>
+                    <ul class="navbar-nav">
+                        <li><a href="#aboutus">NOSOTROS</a></li>
+                        <li><a  href="#services-info">SERVICIOS</a></li>
+                        <li><a  href="#contact-info">CONTACTANOS</a></li>
+                        <li><a href="#prod-gallery">USTEDES</a></li>
+                    </ul>      
+                    <div id="side-menu" class="side-nav">
+                        <a href="#" class="btn-close"   id="close">&times;</a>
+                        <a href="#">Home</a>
+                        <a href="#">About</a>
+                        <a href="#">Services</a>
+                        <a href="#">Contact</a>
+                    </div>
+                
+                <div class="networks"> 
+                    <a target="_blank" href="https://wa.    me/ 5493543637641">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a target="_blank" href="https://   www.   instagram.com/  bellavista_produccion_eventos/">
+                            <i class="fa-brands     fa-instagram"></i>
+                    </a>
+                    <a target="_blank" href="https://   www.   facebook.com/p/     BELLA-VISTA-eventos-100063582820973/">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
                 </div>
-                <nav class="nav" id="nav">
-                    <a href="#lounges-gallery">BIENVENIDOS</a>
-                    <a href="#aboutus">NOSOTROS</a>
-                    <a href="#services-info">SERVICIOS</a>
-                    <!-- <a href="#prod-gallery">GALERIA</a> -->
-                    <a href="#contact-info">CONTACTANOS</a>
-                </nav>
-            </header>
-        </div>
-        <div class="bar-container">
-            <div class="info">
-                <h1 data-aos="fade-down"
-                data-aos-easing="linear"
-                data-aos-duration="1800">Organización integral de Eventos</h1>                
-            </div>
-            <div class="networks" data-aos="fade-down"
-            data-aos-easing="linear"
-            data-aos-duration="2000"> 
-                <a target="_blank" href="https://wa.me/5493543637641">
-                    <i class="fa-brands fa-whatsapp"></i>
-                </a>
-                <a target="_blank" href="https://www.instagram.com/bellavista_produccion_eventos/">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-                <a target="_blank" href="https://www.facebook.com/p/BELLA-VISTA-eventos-100063582820973/">
-                    <i class="fa-brands fa-facebook"></i>
-                </a>
+            </nav>
             </div>
         </div>
     </section>
@@ -69,7 +79,7 @@
             <p>Hacemos los eventos en tu patio, casa, SUM, salón o podés elegir algunos de nuestros salones.</p></span>
         
         <div class="captioned-gallery" id="captioned-gallery">
-	       <figure class="slider">
+	       <figure class="slider"> 
 	            <figure class="lounge-img">
 	                <img src="./assets/lounges/f1_43_11zon.webp" alt="salon 1">
 		            <figcaption>Servicio en Salón de Fiestas</figcaption>
@@ -109,10 +119,10 @@
         <!-- text about us -->
         <div class="content-section">
             <h2 class="title-section">Te contamos un poco sobre nosotros...</h2>
-            <h2 class="title-section">Planificamos Eventos</h2>
+            <h3>Planificamos tus Eventos</h3>
             <p> Somos una empresa familiar, estamos presentes en cada reunión, festejo o evento importante. 
             Nos encargamos de todo lo necesario para que disfrutes tu evento y sea inolvidable: Catering, mobiliario, decoración, sonido, iluminación, DJ's, entre otros. Creamos espacios mágicos para cada oportunidad, que refleje tu personalidad y estilo, adaptandonos tus necesidades. Ofrecemos servicios a domicilio, en salones, casa de campo y además contamos con variedad de salones propios.</p>
-            <p class="special">Te ofrecemos la solución para tu evento, tu único compromiso es difrutarlo.</p>
+            <p>TE OFRECEMOS LA SOLUCIÓN PARA TU EVENTO, TU ÚNICO COMPROMISO ES DISFRUTARLO...</p>
         </div>
         <div class="content-section">
             <!-- team-cards -->

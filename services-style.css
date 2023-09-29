@@ -53,7 +53,7 @@ body {
   font-size: .8em;
 }
 .lightbox {
-  position: fixed;
+  position: absolute;
   display: none;
   background-color: rgba(0, 0, 0, 0.8);
   width: 100%;
@@ -81,7 +81,7 @@ body {
   background-color: rgba(0, 0, 0, 0.8);
   color: #181717;
   padding: 7px;
-  top: 45%;
+  top: 15%;
   cursor: pointer;
 }
 .lightbox-prev {

@@ -2,7 +2,7 @@
 let visible_menu = false;
 let menu = document.getElementById("nav");
 function showHideMenu(){
-    console.log("click click")
+    // console.log("click click")
     if(visible_menu==false){
         menu.style.display = "block";
         visible_menu = true;
@@ -22,7 +22,17 @@ for(let i = 0; i < links.length; i++){
     }
 }
 
-// aos
+// nuevo nav opens in small screens
+$(function() {
+    $("#svg").on("click", function() {
+      $("#side-menu").css("width", "250px");
+      $("#main").css("margin-left", "250px");
+    });
+    $("#close").on("click", function() {
+      $("#side-menu").css("width", "0");
+      $("#main").css("margin-left", "0");
+    });
+  });
 
 
 // footer
