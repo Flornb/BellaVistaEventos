@@ -65,7 +65,7 @@ body{
     font-size: 18px;
 }
 .navbar ul {
-    margin: 8px 0 0 0;
+    margin: 5px 0 0 0;
     list-style: none;
 }
 .navbar a:hover {
@@ -167,7 +167,7 @@ body{
 .lounges-gallery .special {
     width: 25%;
     padding: 10px;
-    text-shadow: 0 0 20px #C6AC8F;
+    text-shadow: 0 1px 5px #5E503F;
 }
 figcaption { 
   margin: 0; 

@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
 
 * {
-  margin: 0px;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins';
 }
 .contact-section {
   position: relative;
@@ -125,6 +125,138 @@
   padding: 10px;
   font-size: 18px;
 }
+/*popup */
+:root {
+  --z-modal: 1000;
+}
+/* .container{
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.modal{
+  height: 100vh;
+  display: grid;
+  place-items: center;
+} */
+
+.modal__button{
+  display: inline-block;
+  background-color: #5E503F;
+  color: #EAE0D5;
+  padding: 1rem 1.25rem;
+  border-radius: .5rem;
+  transition: .3s;
+  letter-spacing: 1px;
+  font-size: large;
+}
+
+.modal__button:hover{
+  background-color: #C6AC8F;
+}
+
+.modal__container{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #5E503F;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  align-items: flex-end;
+  overflow: hidden;
+  transition: all .3s;
+  z-index: var(--z-modal);
+  visibility: hidden;
+  opacity: 0;
+
+  /*=== Effect 3 ===*/
+  /* perspective: 1000px; */
+}
+
+.modal__content{
+  position: relative;
+  background-color: #EAE0D5;
+  text-align: center;
+  padding: 3rem 2rem 2rem;
+  border-radius: 1rem 1rem 0 0;
+  transition: all .3s;
+
+  /*=== Effect 1 ===*/
+  transform: translateY(10%);
+
+  /*=== Effect 2 ===*/
+  /* transform: scale(.5) translateY(10%); */
+
+  /*=== Effect 3 ===*/
+  /* transform: rotateX(65deg) scale(.75) translateY(10%);
+  transform-origin: 50% 100%; */
+}
+
+.modal__img{
+  width: 150px;
+  margin-bottom: .75rem;
+}
+
+.modal__close{
+  display: inline-flex;
+  background-color: #EAE0D5;
+  border-radius: .25rem;
+  color: #181717;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  cursor: pointer;
+}
+
+.modal__title{
+  font-size: large;
+  color: #181717;
+  font-weight: 500;
+}
+
+.modal__description{
+  margin-bottom: 1.5rem;
+}
+
+.modal__button-link{
+  display: block;
+  margin: 1rem auto 0;
+  background-color: transparent;
+  color: #181717;
+  font-weight: 500;
+}
+/* Show modal */
+.show-modal{
+  visibility: visible;
+  opacity: 1;
+}
+
+.show-modal .modal__content{
+  /*=== Effect 1 ===*/
+  /*transform: translateY(0);*/
+
+  /*=== Effect 2 ===*/
+  transform: scale(1) translateY(0);
+
+  /*=== Effect 3 ===*/
+  /*transform: rotateX(0) scale(1) translateY(0);*/
+}
+
+/* For small devices popup */
+@media screen and (min-width: 576px){
+  .modal__content{
+    margin: auto;
+    width: 380px;
+    border-radius: 1.25rem;
+  }
+
+  .modal__img{
+    width: 170px;
+  }
+}
+/* responsive contact */
 @media (max-width: 991px) {
   .contact-section {
     padding: 50px;
