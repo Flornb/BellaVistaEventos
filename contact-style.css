@@ -8,7 +8,7 @@
 }
 .contact-section {
   position: relative;
-  max-height: fit-content;
+  /* max-height: fit-content; */
   padding: 30px 40px;
   display: flex;
   justify-content: center;
@@ -25,11 +25,11 @@
 .contact-section .content h2 {
   font-size: 36px;
   font-weight: 500;
-  color: #fff;
+  color: #EAE0D5;
 }
-.contact-section .content p {
-  font-weight: 300;
-  color: #fff;
+.contact-section .content p, .container p {
+  font-weight: 500;
+  color: #181717;
 }
 .container {
   width: 100%;
@@ -47,11 +47,12 @@
   position: relative;
   padding: 20px 0;
   display: flex;
+  width: 90%;
 }
 .container .contactInfo .box .icon {
   min-width: 60px;
   height: 60px;
-  background: #fff;
+  background: #EAE0D5;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -61,7 +62,7 @@
 .container .contactInfo .box .text {
   display: flex;
   margin-left: 20px;
-  color: #fff;
+  color: #EAE0D5;
   font-size: 16px;
   flex-direction: column;
   font-weight: 300;
@@ -73,7 +74,7 @@
 .contactForm {
   width: 40%;
   padding: 40px;
-  background: #fff;
+  background: #EAE0D5;
   border-radius: 8px;
   box-shadow: 0px 4px 10px #5E503F;
 }
@@ -90,6 +91,7 @@
 .contactForm .inputBox input,
 .contactForm .inputBox textarea {
   width: 100%;
+  background: #EAE0D5;
   padding: 5px 0;
   font-size: 16px;
   margin: 10px 0;
@@ -119,7 +121,7 @@
 .contactForm .inputBox input[type="submit"] {
   width: 100px;
   background: #C6AC8F;
-  color: #fff;
+  color: #EAE0D5;
   border: none;
   cursor: pointer;
   padding: 10px;
@@ -257,18 +259,25 @@
   }
 }
 /* responsive contact */
-@media (max-width: 991px) {
+@media (max-width: 935px) {
   .contact-section {
-    padding: 50px;
-  }
-  .container {
-    flex-direction: column;
+    padding: 20px;
+    margin-top: 50px;
   }
   .container .contactInfo {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
   .container .contactInfo,
   .contactForm {
     width: 100%;
+  }
+}
+@media (max-width: 650px) {
+  .container {
+    flex-direction: column;
+    margin-top: 0px;
+  }  
+  .contactForm {
+    padding: 15px;
   }
 }

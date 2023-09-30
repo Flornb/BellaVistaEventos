@@ -91,8 +91,8 @@ body {
 .ico {
   margin: 50px auto;
   text-align: center;
-  width: 70px;
-  height: 70px;
+  width: 80px;
+  height: 80px;
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -284,6 +284,10 @@ body {
   }
   .gallery-container {
     width: 75%;
+  }
+  .ico {
+    margin-top: 50px;
+    margin-bottom: 30px;
   }
 }
 @media (max-width: 767px) {
