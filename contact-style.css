@@ -8,7 +8,7 @@
 }
 .contact-section {
   position: relative;
-  /* max-height: fit-content; */
+  max-height: fit-content;
   padding: 30px 40px;
   display: flex;
   justify-content: center;
@@ -262,7 +262,6 @@
 @media (max-width: 935px) {
   .contact-section {
     padding: 20px;
-    margin-top: 50px;
   }
   .container .contactInfo {
     margin-bottom: 20px;
