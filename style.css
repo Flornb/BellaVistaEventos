@@ -37,19 +37,16 @@ html{
     position: absolute;
     display: flex;
     flex-direction: column;
-    /* justify-content: flex-end;
-    align-items: center; */
-    /* left: 0px; */
     top: 70px;
     width: 100%;
-    background-image: url(./assets/background/f31.webp);
+    /* background-color: #5E503F; */
+    background-image: url(./assets/background/fondo\ 4.webp);
     background-position: center center;
     background-size: cover;
     box-shadow: 0 0 20px #5E503F;
 }
 /* nueva navbar */
 .navbar {
-    /* background: #3b5998; */
     overflow: hidden;
     height: 65px;
 }
@@ -104,7 +101,7 @@ html{
 }
 #main {
     transition:margin-left 0.5s;
-    padding: 20px;
+    /* padding: 20px; */
     overflow: hidden;
     width: 100%;
 }
@@ -121,9 +118,12 @@ html{
     color: #F3F7F0;
     border: 1px solid #F3F7F0;
     border-radius: 50%;
-    width: 15px;
-    height: 15px;
-    line-height: 10px;
+    width: 12px;
+    height: 12px;
+    /* line-height: 10px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0 5px;
     transition: .5s;
     box-shadow: 0px 0px 7px #F3F7F0;
@@ -148,7 +148,6 @@ html{
 .lounges-gallery {
     display: flex;
     overflow: hidden;
-    /* box-sizing: border-box; */
     padding: 20px;
     padding-right: 0;
     background-image: linear-gradient(to right, #181717, #C6AC8F);  
@@ -164,7 +163,6 @@ html{
 }
 .lounges-gallery .special {
     width: 25%;
-    padding: 10px;
     text-shadow: 0 1px 5px #5E503F;
 }
 figcaption { 
@@ -574,14 +572,14 @@ figure.slider figure.lounge-img figcaption {
 } */
 
 /* nav */
-@media(max-width: 568px) {
+@media(max-width: 730px) {
     .navbar ul {
         display: none;
 
     }
 }
 
-@media(min-width: 568px) {
+@media(min-width: 730px) {
     .open-slide {
         display: none;
     }
@@ -596,8 +594,23 @@ figure.slider figure.lounge-img figcaption {
         margin: auto;
         margin-top: 20px;
     } 
+    .lounges-gallery .special {
+      width: 28%;
+      font-size: small;
+    }
+    div#captioned-gallery { 
+      width: 72%;  
+    }
 }
-
+/* lounge gallery responsive */
+@media screen and (max-width:945px) {
+  .lounges-gallery .special {
+    width: 30%;
+  }
+  div#captioned-gallery { 
+    width: 70%;  
+  }
+}
 /* team gallery responsive */
 @media screen and (max-width: 756px) {
 	.card:nth-of-type(4), .card:nth-of-type(5) {
@@ -608,6 +621,10 @@ figure.slider figure.lounge-img figcaption {
 	.card:nth-of-type(3) {
 		display: none;
 	}
+  .lounges-gallery .special {
+    font-size: 12px;
+  }
+ 
 }
 @media screen and (max-width: 390px) {
 	.card:nth-of-type(3), .card:nth-of-type(2) {
@@ -615,47 +632,88 @@ figure.slider figure.lounge-img figcaption {
 	}
 }
 
-/* animation home logo */
-@keyframes backgroundSlide {
-    from {
-        background-position: 0 0; 
-    }
-    to {
-        background-position: -100% 0; 
-    }
-}
-
 /* responsive iframes (services/footer/productionsgallery/contact*/
+@media screen and (min-width:1265px) {
+  #footer {
+    height: 140px;
+  }
+}
 @media screen and (max-width:1264px) {
-    #footer  {
-        height: 150px;
+  #footer  {
+    height: 150px;
     }
 }
 @media screen and (max-width:935px) {
-    #services-info  {
-        height: 2200px;
-    }
-}
-@media screen and (max-width:800px){
-    #footer  {
-        height: 190px;
+  #services-info  {
+    height: 2200px;
     }
 }
 @media screen and (max-width:767px) {
-    #services-info  {
-        height: 2600px;
-        max-height: fit-content;
+  #services-info  {
+    height: 2600px;
     }
+  #contact-info {
+    height: 900px;
+  }
+}
+@media screen and (max-width: 554px) {
+  #services-info{
+    height: 2700px;
+  }
+}
+@media screen and (max-width: 480px) {
+  #contact-info {
+    height: 920px;
+  }
+  #services-info  {
+    height: 3600px;
+  }
+  .lounges-gallery {
+    margin-left: -1%;
+    padding: 5px;
+  }
+  .lounges-gallery .special {
+    width: 25%;
+    font-size: 11px;
+    text-align: left;
+  }
+  div#captioned-gallery { 
+    width: 75%;  
+  }
+  figure.slider figure.lounge-img figcaption { 
+    font-size: 1.3rem; 
+    padding: .4rem;  
+  }
+}
+@media screen and (max-width: 435px) { 
+  #footer{
+    height: 180px;
+    /* min-height: 30px; */
+  }
+  #contact-info {
+    height: 950px;
+  }
+  div#captioned-gallery{
+    display: none;
+  }
+  .lounges-gallery .special {
+    width: 100%;
+    font-size: 15px;
+    text-align: center;
+  }
 }
 
-@media screen and (max-width:800px) {
-    #footer{
-        height: 100px;
-        max-height: fit-content;
-    }
+/* animation home logo */
+@keyframes backgroundSlide {
+  from {
+      background-position: 0 0; 
+  }
+  to {
+      background-position: -100% 0; 
+  }
 }
 
-/* lounge gallery */
+/* lounge gallery animation */
 @keyframes slidy {
   0% { left: 0%; }
   20% { left: 0%; }
