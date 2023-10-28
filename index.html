@@ -27,6 +27,7 @@
 </head>
 
 <body>
+    <div class="loading" id="loading">Loading&#8230;</div>
     <!--HOME SECTION-->
     <section class="home" id="home">
         <div class="home-content">
@@ -45,25 +46,25 @@
                         <li><a href="#aboutus">NOSOTROS</a></li>
                         <li><a  href="#services-info">SERVICIOS</a></li>
                         <li><a  href="#contact-info">CONTACTANOS</a></li>
-                        <li><a href="#productions-gallery">USTEDES</a></li>
-                        <li><a href="#novedades">NOVEDADES</a></li>
+                        <li><a href="productions-gallery.html">GALERIA DE EVENTOS</a></li>
+                        <!-- <li><a href="#novedades">NOVEDADES</a></li> -->
                     </ul>      
                     <div id="side-menu" class="side-nav">
                         <a href="#" class="btn-close"   id="close">&times;</a>
-                        <a href="#">Home</a>
-                        <a href="#">About</a>
-                        <a href="#">Services</a>
-                        <a href="#">Contact</a>
+                        <a href="#">NOSOTROS</a>
+                        <a href="#">SERVICIOS</a>
+                        <a href="#">CONTACTANOS</a>
+                        <a href="#">GALERIA DE EVENTOS</a>
                     </div>
                 
                     <div class="networks"> 
-                        <a target="_blank" href="https://wa.    me/ 5493543637641">
+                        <a target="_blank" href="https://wa.me/ 5493543637641">
                             <i class="fa-brands fa-whatsapp"></i>
                         </a>
-                        <a target="_blank" href="https://   www.   instagram.com/  bellavista_produccion_eventos/">
+                        <a target="_blank" href="https://www.instagram.com/bellavista_produccion_eventos/">
                             <i class="fa-brands     fa-instagram"></i>
                         </a>
-                        <a target="_blank" href="https://   www.   facebook.com/p/     BELLA-VISTA-eventos-100063582820973/">
+                        <a target="_blank" href="https://www.facebook.com/p/BELLA-VISTA-eventos-100063582820973/">
                             <i class="fa-brands fa-facebook"></i>
                         </a>
                     </div>
@@ -184,6 +185,14 @@
     <!-- footer -->
     <iframe id="footer" src="./footer-section.html" frameborder="0" scrolling="no" width="100"></iframe>
     
+    <!-- loading -->
+    <script>
+        window.addEventListener('load', () => {
+            const loader = document.getElementById('loading');
+            loader.style.display = 'none';
+          });
+      </script>
+
     <!-- reload page = scroll in 0 -->
     <script>
         window.addEventListener('beforeunload', function () {
