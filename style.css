@@ -43,7 +43,6 @@ html{
     /* background-image: url(./assets/background/1-stephen-johnson-Q8_-Cc-IXRY-unsplash\ \(1\).webp); */
     background-position: center center;
     background-size: cover;
-    /* box-shadow: 0 0 20px #5E503F; */
 }
 /* nueva navbar */
 .navbar {
@@ -64,8 +63,9 @@ html{
     list-style: none;
 }
 .navbar a:hover {
-    background: #EAE0D5;
+    background: #C6AC8F;
     color: #5E503F;
+    border-radius: 5px;
 }
 .side-nav{
     height: 100%;
@@ -85,12 +85,12 @@ html{
     text-decoration: none;
     display: block;
     font-size: 22px;
-    color: #cccccc;
+    color: #EAE0D5;
     transition: 0.3s;
 }
 .side-nav a:hover {
-    color: #fff;
-    border-bottom: 1px solid #fff;
+    color: #EAE0D5;
+    border-bottom: 1px solid #EAE0D5;
 }
 .side-nav .btn-close {
     position: absolute;
@@ -129,10 +129,10 @@ html{
     box-shadow: 0px 0px 4px #EAE0D5;
 }
 .home .networks a:hover{
-    background-color: #C6AC8F;
-    box-shadow: 0 0 20px #5E503F;
+    background: #C6AC8F;
+    color: #5E503F;
 }
-.home .info h1{
+/* .home .info h1{
     font-size: 1.5rem;
     padding: 10px;
     font-family: "Oswald";
@@ -142,7 +142,7 @@ html{
     letter-spacing: 1px;
     text-transform: uppercase;
     color: #F3F7F0;
-}
+} */
 
 /* lounges gallery */
 .lounges-gallery {
@@ -159,11 +159,11 @@ html{
     border-radius: 8px;
     border-bottom-right-radius: 0;
     border-top-right-radius: 0;
-    box-shadow: 0px 4px 10px #5E503F;
+    box-shadow: 0px 4px 10px #181717;
 }
 .lounges-gallery .special {
     width: 25%;
-    text-shadow: 0 1px 5px #5E503F;
+    text-shadow: 0 1px 5px #181717;
 }
 figcaption { 
   margin: 0; 
@@ -214,24 +214,25 @@ figure.slider figure.lounge-img figcaption {
     color: #EAE0D5;
     margin-left: 10px;
     text-align: start;
-    text-shadow: 0 0 5px #5E503F;
+    text-shadow: 0 0 3px #5E503F;
     padding: 10px;
 }
 .aboutus{
     position: relative;
     padding-bottom: 30px;
     padding-top: 30px;
-    margin-bottom: 20px;
-    box-shadow: 0px 4px 10px #5E503F;
+    margin-bottom: 20x;
+    box-shadow: 0px 2px 3px #5E503F;
     border-radius: 8px;
     text-align: center;
     width: 100%;
 }
 .aboutus::before {
   content: "";
-  background-image: url(./assets/background/1-stephen-johnson-Q8_-Cc-IXRY-unsplash\ \(1\).webp);
+  background-image: url(./assets/background/evie-s-TNacNuuEl1o-unsplash.webp);
   background-size: cover;
-  filter: brightness(20%);
+  background-position: center;
+  filter:brightness(15%);
   position: absolute;
   top: 0;
   left: 0;
@@ -255,21 +256,19 @@ figure.slider figure.lounge-img figcaption {
 .aboutus .content-section p{
     margin: auto;
     color: #EAE0D5;
-    text-shadow: 0 0 5px #5E503F;
     letter-spacing: 1.5px;
     font-weight: 200;
-    font-size: 16px;
+    font-size: 18px;
 }
-
 /* team gallery */
 .aboutus h3{
     font-family: 'Oswald';
     color: #EAE0D5;
-    text-shadow: 0 0 30px #C6AC8F;
+    text-shadow: 0 0 3px #C6AC8F;
     text-transform: uppercase;
     font-size: 23px;
-    letter-spacing: 1.5px;
-    font-weight: 400;
+    letter-spacing: 0.1rem;
+    font-weight: normal;
     padding: 5px;
 }
 .cards-container{
@@ -285,8 +284,8 @@ figure.slider figure.lounge-img figcaption {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
-    filter: brightness(120%);
-	border-radius: 15px;
+  filter: brightness(120%);
+	border-radius: 5px;
 	box-shadow: 0px 3px 7px #C6AC8F;
 	margin: 10px;
 	height: 280px;
@@ -304,19 +303,17 @@ figure.slider figure.lounge-img figcaption {
 	background-image: url('./assets/family-pics/foto\ fliar.webp');
 }
 .card:nth-of-type(2) {
-	background-image: url('./assets/family-pics/20.webp');
+	background-image: url('./assets/family-pics/12\ \(1\).webp');
 }
 .card:nth-of-type(3) {
-	background-image: url('./assets/family-pics/beer\ 1.webp');
+	background-image: url('./assets/family-pics/beer.webp');
 }
 .card:nth-of-type(4) {
 	background-image: url('./assets/family-pics/foodtruck.webp');
 }
 .card:nth-of-type(5) {
-	background-image: url('./assets/family-pics/12\ \(1\).webp');
+	background-image: url('./assets/family-pics/20.webp');
 }
-
-
 /* made with love section*/
 .aboutus .content-section .row{
     display: flex;
@@ -326,6 +323,10 @@ figure.slider figure.lounge-img figcaption {
 .aboutus .content-section .row .col{
     width: 30%;
     margin-top: 20px;
+    /* background-color: #5E503F; */
+    background-image: linear-gradient(to bottom, #181717, #5E503F);  
+    padding: 0.5rem;
+    border-radius: 5px;
 }
 .aboutus .content-section .row .col i{
     color: #EAE0D5;
@@ -338,8 +339,9 @@ figure.slider figure.lounge-img figcaption {
 }
 .aboutus .content-section .row .col span{
     display: block;
-    font-weight: bold;
+    font-weight: semi-bold;
     margin: 8px 0;
+    text-transform: uppercase;
 }
   
 /* services-info */
