@@ -5,6 +5,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+    
 }
 
 h1{
@@ -23,6 +24,14 @@ h1{
   color: #5E503F;
   text-align: center;
   margin: 1rem 0;
+ }
+ p{
+  font-size: 1rem;
+  font-family: 'Baumans';
+  font-weight: normal;
+  color: #5E503F;
+  text-align: center;
+  margin: 1rem 2rem;
  }
 
 .wrapper{
@@ -78,9 +87,9 @@ h1{
 
 .back{
   background: #EAE0D5;
-  background: -webkit-linear-gradient(45deg,  #C6AC8F 0%,#5E503F 100%);
-  background: -o-linear-gradient(45deg,  #C6AC8F 0%,#5E503F 100%);
-  background: linear-gradient(45deg,  #C6AC8F 0%,#5E503F 100%);
+  background: -webkit-linear-gradient(45deg,  #C6AC8F 0%,#F3F7F0 100%);
+  background: -o-linear-gradient(45deg,  #C6AC8F 0%,#F3F7F0 100%);
+  background: linear-gradient(45deg,  #C6AC8F 0%,#F3F7F0 100%);
 }
 
 .front:after{
@@ -162,6 +171,8 @@ h1{
   font-size: 2rem;
   margin-bottom: 2rem;
   position: relative;
+  color: #EAE0D5;
+  font-family: 'Oswald';
 }
 
 .front .inner p:after{
@@ -169,7 +180,7 @@ h1{
   width: 4rem;
   height: 2px;
   position: absolute;
-  background: #C6AC8F;
+  background: #EAE0D5;
   display: block;
   left: 0;
   right: 0;
@@ -178,8 +189,8 @@ h1{
 }
 
 .front .inner span{
-  color: rgba(255,255,255,0.7);
-  font-family: 'Montserrat';
+  color: #EAE0D5;
+  font-family: 'Oswald';
   font-weight: 300;
 }
 
