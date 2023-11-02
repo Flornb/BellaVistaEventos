@@ -3,6 +3,7 @@
 *{
   margin: 0;
   padding: 0;
+  /* height: auto; */
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
     
@@ -31,7 +32,7 @@ h1{
   font-weight: normal;
   color: #5E503F;
   text-align: center;
-  margin: 1rem 2rem;
+  margin: 1rem 1rem;
  }
 
 .wrapper{
@@ -193,7 +194,7 @@ h1{
   font-family: 'Oswald';
   font-weight: 300;
 }
-
+/* resposive */
 @media screen and (max-width: 64rem){
   .col{
     width: calc(33.333333% - 2rem);
@@ -205,7 +206,6 @@ h1{
     width: calc(50% - 2rem);
   }
 }
-
 @media screen and (max-width: 32rem){
   .col{
     width: 100%;

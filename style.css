@@ -102,7 +102,6 @@ html{
 }
 #main {
     transition:margin-left 0.5s;
-    /* padding: 20px; */
     overflow: hidden;
     width: 100%;
 }
@@ -121,7 +120,6 @@ html{
     border-radius: 50%;
     width: 10px;
     height: 10px;
-    /* line-height: 10px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -140,13 +138,14 @@ html{
     overflow: hidden;
     padding: 20px;
     padding-right: 0;
-    background-image: linear-gradient(to right, #181717, #D0B7B4);  
+    padding-left: 0;
+    background-image: linear-gradient(to bottom, #181717, #5E503F);   
     width: auto;
-    margin-left: 5%;
+    margin-left: 0;
     margin-right: 0;
     margin-top: 70px;
     margin-bottom: 1%;
-    border-radius: 8px;
+    /* border-radius: 8px; */
     border-bottom-right-radius: 0;
     border-top-right-radius: 0;
     box-shadow: 0px 4px 10px #181717;
@@ -609,6 +608,12 @@ figure.slider figure.lounge-img figcaption {
 .texts:nth-of-type(5) {
 	background-image: url('./assets/texts/5.webp');
 }
+.texts:nth-of-type(6) {
+	background-image: url('./assets/texts/6.webp');
+}
+.texts:nth-of-type(7) {
+	background-image: url('./assets/texts/7.webp');
+}
 /* RESPONSIVE SECTION */
 @media(max-width: 730px) {
     .navbar ul {
@@ -650,13 +655,18 @@ figure.slider figure.lounge-img figcaption {
 }
 
 /* team gallery responsive - customer texts responsive*/
+@media screen and (max-width: 1000px) {
+	.texts:nth-of-type(4) , .texts:nth-of-type(5) , .texts:nth-of-type(3){
+		display: none;
+	}
+}
 @media screen and (max-width: 756px) {
-	.card:nth-of-type(4), .card:nth-of-type(5), .texts:nth-of-type(4) , .texts:nth-of-type(5){
+	.card:nth-of-type(4), .card:nth-of-type(5), .texts:nth-of-type(4) , .texts:nth-of-type(5) , .texts:nth-of-type(3), .texts:nth-of-type(6) {
 		display: none;
 	}
 }
 @media screen and (max-width: 600px) {
-	.card:nth-of-type(3), .texts:nth-of-type(3) {
+	.card:nth-of-type(3), .texts:nth-of-type(3) , .texts:nth-of-type(6), .texts:nth-of-type(5), .texts:nth-of-type(4), .texts:nth-of-type(7) {
 		display: none;
 	}
   .lounges-gallery .special {
@@ -669,37 +679,40 @@ figure.slider figure.lounge-img figcaption {
 	}
 }
 
-/* responsive iframes (footer/productionsgallery/contact)*/
+/* responsive iframes (footer/services/productionsgallery/contact)*/
 @media screen and (min-width:1265px) {
   #footer {
     height: 140px;
   }
+  #services-info  {
+    height: 2900px;
+    }
 }
 @media screen and (max-width:1264px) {
   #footer  {
     height: 150px;
     }
+    #services-info  {
+      height: 3500px;
+      }
 }
-/* @media screen and (max-width:935px) {
+@media screen and (max-width:976px) {
   #services-info  {
-    height: 2200px;
+    height: 3600px;
     }
-} */
-@media screen and (max-width:767px) {
-  /* #services-info  {
-    height: 2600px;
-    } */
+}
+@media screen and (max-width:768px) {
+  #services-info  {
+    height: 4600px;
+    }
   #contact-info {
     height: 700px;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 650px) {
   #contact-info {
     height: 920px;
   }
-  /* #services-info  {
-    height: 3600px;
-  } */
   .lounges-gallery {
     margin-left: -1%;
     padding: 5px;
@@ -717,9 +730,22 @@ figure.slider figure.lounge-img figcaption {
     padding: .4rem;  
   }
 }
-@media screen and (max-width: 435px) { 
+@media screen and (max-width: 610px) { 
+  #services-info  {
+    height: 4800px;
+  }
+}
+@media screen and (max-width: 512px) { 
+  #services-info  {
+    height: 8200px;
+  }
+}
+@media screen and (max-width: 438px) { 
   #footer{
     height: 180px;
+  }
+  #services-info  {
+    height: 8300px;
   }
   #contact-info {
     height: 950px;
@@ -727,15 +753,36 @@ figure.slider figure.lounge-img figcaption {
   div#captioned-gallery{
     display: none;
   }
+  .lounges-gallery {
+    background-image: linear-gradient(to bottom, #181717, #5E503F); 
+  }
   .lounges-gallery .special {
     width: 100%;
     font-size: 15px;
     text-align: center;
   }
 }
-@media screen and (max-width: 353px) {
+@media screen and (max-width: 394px) {
+  #services-info  {
+    height: 8400px;
+  }
+}
+@media screen and (max-width: 358px) {
   #contact-info{
     height: 1100px;
+  }
+  #services-info  {
+    height: 8600px;
+  }
+}
+@media screen and (max-width: 292px) {
+  #services-info  {
+    height: 8700px;
+  }
+}
+@media screen and (max-width: 250px) {
+  #services-info  {
+    height: 8900px;
   }
 }
 
