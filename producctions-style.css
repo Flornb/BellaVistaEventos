@@ -1,4 +1,4 @@
- @import url('https://fonts.googleapis.com/css2?family=Baumans&family=Dancing+Script:wght@400;500;600;700&family=Oswald:wght@200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Roboto:wght@100;300;400;500&display=swap');
 
 
 body {
@@ -23,13 +23,13 @@ html{
   margin: 5px;
   border-radius: 5px; 
   cursor: pointer;
-  font-family: 'Baumans';
+  font-family: 'DM Serif Text';
 }
 .button:hover{
   color: #C6AC8F;
 }
 .title-section {
-  font-family: 'Oswald';
+  font-family: 'DM Serif Text';
   color: #181717;
   font-size: 40px;
   font-weight: 400;
@@ -38,8 +38,9 @@ html{
   border-bottom: 1px solid #181717;
 }
 .special {  
-  font-family: 'Dancing Script';
-  font-size: 30px;
+  font-family: 'DM Serif Text';
+  font-size: 35px;
+  font-weight: 400;
   letter-spacing: .1rem;
 }
 .gallery-container {

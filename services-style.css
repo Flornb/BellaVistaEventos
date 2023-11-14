@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Baumans&family=Dancing+Script:wght@400;500;600;700&family=Oswald:wght@200;300;400;500;600&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Roboto:wght@100;300;400;500&display=swap');
 
 *{
   margin: 0;
@@ -11,7 +11,7 @@
 
 h1{
   font-size: 2.5rem;
-  font-family: 'Oswald';
+  font-family: 'DM Serif Text';
   font-weight: normal;
   color: #181717;
   text-align: center;
@@ -20,7 +20,7 @@ h1{
 }
  h2{
   font-size: 2rem;
-  font-family: 'Oswald';
+  font-family: 'DM Serif Text';
   font-weight: normal;
   color: #5E503F;
   text-align: center;
@@ -28,7 +28,7 @@ h1{
  }
  p{
   font-size: 1rem;
-  font-family: 'Baumans';
+  font-family: 'Roboto';
   font-weight: normal;
   color: #5E503F;
   text-align: center;
@@ -173,7 +173,7 @@ h1{
   margin-bottom: 2rem;
   position: relative;
   color: #EAE0D5;
-  font-family: 'Oswald';
+  font-family: 'Roboto';
 }
 
 .front .inner p:after{
@@ -191,7 +191,7 @@ h1{
 
 .front .inner span{
   color: #EAE0D5;
-  font-family: 'Oswald';
+  font-family: 'Roboto';
   font-weight: 300;
 }
 /* resposive */

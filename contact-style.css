@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Baumans&family=Oswald:wght@200;300;400;500;600&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Roboto:wght@100;300;400;500&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins';
 }
 .contact-section {
   position: relative;
@@ -24,13 +23,27 @@
 }
 .contact-section .content h2 {
   font-size: 36px;
-  font-weight: 500;
-  color: #EAE0D5;
-}
-.contact-section .content p, .container p {
-  font-weight: 500;
+  font-weight: 600;
+  text-shadow: 1px 2px 4px #5E503F;;
   color: #181717;
-  text-shadow: 0px 4px 13px #C6AC8F;
+  font-family: 'DM Serif';
+  text-transform: uppercase;
+  text-align: center;
+}
+.contact-section .content p {
+  font-size: 18px;
+  font-weight: 400;
+  text-shadow: 1px 2px 4px #EAE0D5;
+  color: #181717;
+  font-family: 'Roboto';
+  text-align: center;
+}
+.container p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #F3F7F0;
+  font-family: 'Roboto';
+  text-shadow: 0px 1px 5px #5E503F;
 }
 .container {
   width: 100%;
@@ -71,7 +84,9 @@
 .container .contactInfo .box .text h3 {
   font-weight: 500;
   color: #181717;
-  text-shadow: 0px 4px 8px #C6AC8F;
+  text-shadow: 0px 3px 8px #5E503F;
+  font-family: 'Roboto';
+  text-transform: uppercase;
 }
 .contactForm {
   width: 40%;
@@ -101,16 +116,18 @@
   border-bottom: 2px solid #5E503F;
   outline: none;
   resize: none;
+  font-family: 'Roboto';
 }
 .contactForm .inputBox span {
   position: absolute;
   left: 0;
   padding: 5px 0;
-  font-size: 16px;
+  font-size: 13px;
   margin: 10px 0;
   pointer-events: none;
   transition: 0.5s;
   color: #5E503F;
+  font-family: 'Roboto';
 }
 .contactForm .inputBox input:focus ~ span,
 .contactForm .inputBox input:valid ~ span,
@@ -153,6 +170,7 @@
   transition: .3s;
   letter-spacing: 1px;
   font-size: large;
+  font-family: 'Roboto';
 }
 
 .modal__button:hover{
@@ -218,10 +236,12 @@
   font-size: large;
   color: #181717;
   font-weight: 500;
+  font-family: 'Roboto';
 }
 
 .modal__description{
   margin-bottom: 1.5rem;
+  font-family: 'Roboto';
 }
 
 .modal__button-link{
@@ -230,6 +250,8 @@
   background-color: transparent;
   color: #181717;
   font-weight: 500;
+  padding: 5px;
+  font-family: 'Roboto';
 }
 /* Show modal */
 .show-modal{
