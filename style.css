@@ -523,7 +523,6 @@ button.back-to-top.show:active {
 /* services-info */
 #services-info  {
     width: 100%;
-    height: 2500px;
     max-height: fit-content;
     /* max-height: 100vh; */ 
 }
@@ -848,77 +847,77 @@ button.back-to-top.show:active {
     height: 140px;
   }
   #services-info  {
-    height: 2900px;
+    height: 3500px;
     }
 }
 @media screen and (max-width:1264px) {
   #footer  {
     height: 150px;
-    }
-    #services-info  {
-      height: 3500px;
-      }
-}
-@media screen and (max-width:976px) {
+  }
   #services-info  {
-    height: 3600px;
+    height: 3900px;
+  }
+}
+@media screen and (max-width:1025px) {
+  #services-info  {
+    height: 4500px;
     }
 }
-@media screen and (max-width:768px) {
+@media screen and (max-width:769px) {
   #services-info  {
-    height: 4600px;
+    height: 5500px;
     }
   #contact-info {
     height: 700px;
   }
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 649px) {
   #contact-info {
     height: 920px;
   }
-}
-@media screen and (max-width: 610px) { 
   #services-info  {
-    height: 4800px;
+    height: 6500px;
   }
 }
-@media screen and (max-width: 512px) { 
+@media screen and (max-width: 590px) { 
   #services-info  {
-    height: 8200px;
+    height: 6600px;
   }
 }
 @media screen and (max-width: 438px) { 
   #footer{
     height: 180px;
   }
-  #services-info  {
-    height: 8300px;
-  }
-  #contact-info {
+    #contact-info {
     height: 950px;
   }
 }
-@media screen and (max-width: 394px) {
+  @media screen and (max-width: 513px) {
   #services-info  {
-    height: 8400px;
+    height: 9100px;
   }
 }
-@media screen and (max-width: 358px) {
+@media screen and (max-width: 394px) {
+  /* #services-info  {
+    height: 8800px;
+  } */
+}
+@media screen and (max-width: 359px) {
   #contact-info{
     height: 1100px;
   }
   #services-info  {
-    height: 8600px;
+    height: 10000px;
   }
 }
 @media screen and (max-width: 292px) {
   #services-info  {
-    height: 8700px;
+    height: 10000px;
   }
 }
 @media screen and (max-width: 250px) {
   #services-info  {
-    height: 8900px;
+    height: 10200px;
   }
 }
 
